@@ -5,7 +5,7 @@ import asyncio
 import random
 
 
-async def wait_random(number=10):
+async def wait_random(max_delay=10):
     n = random.uniform(0, number)
     await asyncio.sleep(n)
     return (n)
